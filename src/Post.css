@@ -1,0 +1,144 @@
+.post{
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color:white;
+  box-shadow: 0 5px 7px -7px rgba(0,0,0,0.75);
+}
+
+.post__top{
+  display:flex;
+  position: relative;
+  align-items: center;
+  padding: 15px;
+}
+
+.post__avatar{
+  margin-right: 10px;
+}
+
+.post__topInfo > h3 {
+  font-size: medium;
+}
+
+.post__topInfo > p {
+  font-size:small;
+  color:gray;
+}
+
+.post__bottom {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 15px 25px;
+}
+
+.post__image > img {
+  width: 100%;
+}
+
+.post__options{
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+  display:flex;
+  justify-content: space-evenly;
+  font-size:medium;
+  color:gray;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.post__option{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex:1;
+}
+
+.post__option > p {
+  margin-left: 10px;
+}
+
+.post__option:hover {
+  background-color: #eff2f5;
+  border-radius:10px;
+}
+
+@media only screen and (max-width: 1440px){}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .post{
+    border-radius:0;
+    margin-top:10px;
+    box-shadow:none;
+    order: 3;
+  }
+
+  .post__bottom{
+    padding: 0px 14px;
+    margin-top:0;
+  }
+
+  .post__bottom > p{
+    font-size: .91rem;
+    font-weight: 400;
+  }
+
+  .post__options{
+    padding: 7px 5px;
+    border-top: 1px solid rgba(0,0,0,.075);
+  }
+
+  .post__option > p {
+    margin-left: 3px;
+    font-size: .85rem;
+  }
+
+  .post__option > .MuiSvgIcon-root {
+    width: 0.8em;
+    height: 0.8em;
+  }
+}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 414px) {
+  .post{
+    border-radius:0;
+    margin-top:10px;
+    box-shadow:none;
+    order: 3;
+  }
+
+  .post__bottom{
+    padding: 0px 14px;
+    margin-top:0;
+  }
+
+  .post__bottom > p{
+    font-size: .91rem;
+    font-weight: 400;
+  }
+
+  .post__options{
+    padding: 7px 5px;
+    border-top: 1px solid rgba(0,0,0,.075);
+  }
+
+  .post__option > p {
+    margin-left: 3px;
+    font-size: .85rem;
+  }
+
+  .post__option > .MuiSvgIcon-root {
+    width: 0.8em;
+    height: 0.8em;
+  }
+}

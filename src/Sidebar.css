@@ -1,13 +1,15 @@
-.app{
-  background-color: #f1f2f5;
-  height:100%;
-}
-
-.app__body{
-  display:flex;
+.sidebar {
+  padding: 25px 10px;
+  flex: 0.33;
 }
 
 @media only screen and (max-width: 1440px){}
+
+@media only screen and (max-width: 1235px){
+  .sidebar{
+    display:none;
+  }
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}
@@ -16,17 +18,12 @@
 @media (max-width: 991.98px) {}
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-  .app{
-    background-color: #e8e8e8;
-  }  
-}
+@media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {}
 
 @media (max-width: 414px) {
-  .app{
-    background-color: #e8e8e8;
-  }  
+  .sidebar{
+    display:none;
+  }
 }
-

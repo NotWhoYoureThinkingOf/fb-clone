@@ -1,0 +1,63 @@
+.story{
+  position:relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  width: 120px;
+  height: 200px;
+  box-shadow: 0px 5px 17px -7px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  border-radius:10px;
+  margin-right:10px;
+  transition: transform 100ms ease-in;
+  cursor:pointer;
+}
+
+.story:hover{
+  transform: scale(1.07);
+} 
+
+.story__avatar{
+  margin: 10px;
+  border: 5px solid #2e81f4
+}
+
+.story > h4 {
+  position:absolute;
+  bottom: 20px;
+  left: 20px;
+  color:white;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1440px){}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {}
+
+@media (max-width: 414px) {
+  .story{
+    box-shadow:none;
+    background-color:black;
+    min-width:120px;
+  }
+
+  .story:hover{
+    transform: none;
+  }
+  
+  .story > h4{
+    font-weight:400;
+    font-size:.85rem;
+    bottom: 10px;
+    left: 13px;
+  }
+}
